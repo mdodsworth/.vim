@@ -16,6 +16,7 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set visualbell
+set cursorline
 set ttyfast
 set backspace=indent,eol,start
 set laststatus=2
@@ -65,5 +66,3 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-
