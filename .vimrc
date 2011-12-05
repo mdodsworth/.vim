@@ -35,6 +35,7 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
+nnoremap <leader>a :Ack<space>
 nnoremap <tab> %
 vnoremap <tab> %
 
