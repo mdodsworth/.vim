@@ -8,7 +8,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
+ 
 set pastetoggle=<F2>
 set encoding=utf-8
 set scrolloff=3
@@ -75,5 +75,8 @@ noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 
 let g:tagbar_usearrows = 1
-nnoremap <leader>l :TagbarToggle<CR>
+nnoremap <leader>j :TagbarToggle<CR>
+
+let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
+noremap <leader>l :LustyJuggler<CR>
