@@ -76,3 +76,4 @@ noremap <leader>m <Esc>:CommandTBuffer<CR>
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+let g:LustyJugglerSuppressRubyWarning = 1
