@@ -1,3 +1,6 @@
+call pathogen#infect()
+
+:colorscheme molokai
 set nocompatible
 set modelines=0
 
@@ -6,6 +9,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set pastetoggle=<F2>
 set encoding=utf-8
 set scrolloff=3
 set autoindent
@@ -65,3 +69,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
+
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
