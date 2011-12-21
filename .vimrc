@@ -80,3 +80,6 @@ nnoremap <leader>j :TagbarToggle<CR>
 let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 noremap <leader>l :LustyJuggler<CR>
+
+filetype plugin on
+"let g:molokai_original = 1
