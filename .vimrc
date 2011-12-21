@@ -38,7 +38,7 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader><space> :noh<CR>
 nnoremap <leader>a :Ack<space>
 nnoremap <tab> %
 vnoremap <tab> %
@@ -70,12 +70,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>j <Esc>:CommandT<CR>
 noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 
 let g:tagbar_usearrows = 1
-nnoremap <leader>j :TagbarToggle<CR>
+nnoremap <leader>f :TagbarToggle<CR>
 
 let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
