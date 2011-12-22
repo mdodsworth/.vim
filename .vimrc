@@ -2,7 +2,7 @@ call pathogen#infect()
 
 :colorscheme molokai
 
-set tags=./tags;/
+set tags=./tags,tags
 set nocompatible
 set modelines=0
 
@@ -40,7 +40,7 @@ set gdefault
 set incsearch
 set showmatch
 set hlsearch
-nnoremap <leader><space> :noh<CR>
+nnoremap <silent><leader><space> :noh<CR>
 nnoremap <leader>a :Ack<space>
 nnoremap <tab> %
 vnoremap <tab> %
@@ -85,5 +85,10 @@ let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
 noremap <leader>l :LustyJuggler<CR>
 
+noremap <leader>v :YRShow<CR>
+
 filetype plugin on
 "let g:molokai_original = 1
+"
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
