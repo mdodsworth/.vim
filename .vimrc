@@ -88,6 +88,7 @@ noremap <leader>l :LustyJuggler<CR>
 noremap <leader>v :YRShow<CR>
 
 filetype plugin on
+set ofu=syntaxcomplete#Complete
 "let g:molokai_original = 1
 "
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
