@@ -1,6 +1,8 @@
 call pathogen#infect()
 
 :colorscheme molokai
+
+set tags=./tags;/
 set nocompatible
 set modelines=0
 
