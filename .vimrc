@@ -1,4 +1,4 @@
-call pathogen#infect()
+ all pathogen#infect()
 call pathogen#helptags()
 
 :colorscheme molokai
@@ -51,10 +51,6 @@ set textwidth=121
 set formatoptions=qrn1
 set colorcolumn=121
 
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 noremap <up> <nop>
 noremap <down> <nop>
 noremap <left> <nop>
@@ -90,6 +86,6 @@ noremap <leader>v :YRShow<CR>
 
 filetype plugin on
 "let g:molokai_original = 1
-"
+ 
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabDefaultCompletionType = "context"
