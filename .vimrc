@@ -1,4 +1,4 @@
- all pathogen#infect()
+call pathogen#infect()
 call pathogen#helptags()
 
 :colorscheme molokai
