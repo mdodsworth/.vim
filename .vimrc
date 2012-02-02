@@ -1,6 +1,11 @@
+set nocp
 call pathogen#infect()
-call pathogen#helptags()
+syntax on
+filetype plugin indent on
+call pathogen#infect()
 
+set t_Co=256            " use 265 colors in vim
+     
 :colorscheme molokai
 
 set tags=./tags,tags
