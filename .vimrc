@@ -146,3 +146,6 @@ inoremap <silent> <C-Up> <C-o>:<C-u>call MoveLineUp()<CR>
 inoremap <silent> <C-Down> <C-o>:<C-u>call MoveLineDown()<CR>
 vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
 vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
+
+"send the yank to the clipboard
+vnoremap <leader>y "*y
