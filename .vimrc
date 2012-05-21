@@ -76,7 +76,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>j <Esc>:FufFile<CR>
+noremap <leader>j <Esc>:FufCoverageFile<CR>
 noremap <leader>m <Esc>:FufBuffer<CR>
 
 let g:tagbar_usearrows = 1
