@@ -76,9 +76,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>j <Esc>:CommandT<CR>
-noremap <leader>O <Esc>:CommandTFlush<CR>
-noremap <leader>m <Esc>:CommandTBuffer<CR>
+noremap <leader>j <Esc>:FufFile<CR>
+noremap <leader>m <Esc>:FufBuffer<CR>
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :TagbarToggle<CR>
