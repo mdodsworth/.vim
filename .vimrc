@@ -12,9 +12,9 @@ set tags=./tags,tags
 set nocompatible
 set modelines=0
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
  
 set pastetoggle=<F2>
@@ -34,6 +34,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set cursorline
+"enable clipboard integration in macvim
 set clipboard=unnamed
 
 let mapleader = ","
@@ -68,8 +69,8 @@ noremap <F1> <ESC>
 nnoremap ; :
 inoremap jj <ESC>
 
-nnoremap <leader>w <C-w>v<C-w>l
-nnoremap <leader>e <C-w>s<C-w>j
+nnoremap <leader>w <C-w>v<C-w>j
+nnoremap <leader>e <C-w>s<C-w>l
 nnoremap <leader>q <C-w>q
 nnoremap <leader>r <C-w>o
 nnoremap <C-h> <C-w>h
