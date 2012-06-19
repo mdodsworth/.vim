@@ -34,6 +34,7 @@ set laststatus=2
 set relativenumber
 set undofile
 set cursorline
+set clipboard=unnamed
 
 let mapleader = ","
 
@@ -147,10 +148,10 @@ inoremap <silent> <C-Down> <C-o>:<C-u>call MoveLineDown()<CR>
 vnoremap <silent> <C-Up> :<C-u>call MoveVisualUp()<CR>
 vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
-"send the yank to the clipboard
-vnoremap <leader>y "*y
-
 "excludes for fuzzy finder
 let g:fuf_file_exclude = '\v\~$|\.(un\~|swp)$|node_modules/|\.git/'
 let g:fuf_mrufile_maxItem = 300
 let g:fuf_mrucmd_maxItem = 400
+
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gc :Gcommit<CR>
