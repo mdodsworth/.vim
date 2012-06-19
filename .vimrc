@@ -76,7 +76,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>j <Esc>:FufCoverageFile<CR>
+noremap <leader>j <Esc>:FufFile **/<CR>
 noremap <leader>m <Esc>:FufBuffer<CR>
 
 let g:tagbar_usearrows = 1
@@ -149,3 +149,8 @@ vnoremap <silent> <C-Down> :<C-u>call MoveVisualDown()<CR>
 
 "send the yank to the clipboard
 vnoremap <leader>y "*y
+
+"excludes for fuzzy finder
+let g:fuf_file_exclude = '\v\~$|\.(un\~|swp)$|node_modules/|\.git/'
+let g:fuf_mrufile_maxItem = 300
+let g:fuf_mrucmd_maxItem = 400
