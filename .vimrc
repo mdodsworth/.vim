@@ -69,8 +69,8 @@ noremap <F1> <ESC>
 nnoremap ; :
 inoremap jj <ESC>
 
-nnoremap <leader>w <C-w>v<C-w>j
-nnoremap <leader>e <C-w>s<C-w>l
+nnoremap <leader>w <C-w>s<C-w>j
+nnoremap <leader>e <C-w>v<C-w>l
 nnoremap <leader>q <C-w>q
 nnoremap <leader>r <C-w>o
 nnoremap <C-h> <C-w>h
