@@ -80,6 +80,7 @@ nnoremap <C-l> <C-w>l
 
 noremap <leader>j <Esc>:FufFile **/<CR>
 noremap <leader>m <Esc>:FufBuffer<CR>
+noremap <leader>cd <Esc>:FufDir<CR>
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :TagbarToggle<CR>
