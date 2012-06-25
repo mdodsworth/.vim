@@ -157,3 +157,8 @@ let g:fuf_mrucmd_maxItem = 400
 
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gc :Gcommit<CR>
+
+"remove the toolbar, right & left scrollbars
+set guioptions-=T
+set guioptions-=l
+set guioptions-=r
