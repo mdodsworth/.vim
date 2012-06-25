@@ -162,3 +162,5 @@ nnoremap <leader>gc :Gcommit<CR>
 set guioptions-=T
 set guioptions-=l
 set guioptions-=r
+set guioptions-=L
+set guioptions-=R
