@@ -32,6 +32,7 @@ set ttyfast
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
+set number
 set undofile
 set cursorline
 "enable clipboard integration in macvim
