@@ -72,7 +72,7 @@ inoremap jj <ESC>
 
 nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <leader>e <C-w>v<C-w>l
-nnoremap <leader>q <C-w>q
+nnoremap <leader>q :bd<CR>
 nnoremap <leader>r <C-w>o
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
