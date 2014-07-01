@@ -1,11 +1,34 @@
-set nocp
-call pathogen#infect()
-syntax on
+set nocompatible              
+filetype off                  
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'FuzzyFinder'
+Plugin 'L9'
+Plugin 'LustyJuggler'
+Plugin 'SuperTab'
+Plugin 'Tagbar'
+Plugin 'The-NERD-Commenter'
+Plugin 'The-NERD-tree'
+Plugin 'YankRing.vim'
+Plugin 'ack.vim'
+Plugin 'fugitive.vim'
+Plugin 'git@github.com:ekalinin/Dockerfile.vim.git'
+Plugin 'git@github.com:jnwhiteh/vim-golang.git'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'go.vim'
+Plugin 'molokai'
+Plugin 'git@github.com:motus/pig.vim.git'
+Plugin 'superSnipMate'
+Plugin 'vim-coffee-script'
+
+call vundle#end()
 filetype plugin indent on
-call pathogen#infect()
 
 set t_Co=256            " use 265 colors in vim
-     
+syntax on
+
 :colorscheme molokai
 
 set tags=./tags,tags
