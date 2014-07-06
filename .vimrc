@@ -20,7 +20,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'go.vim'
 Plugin 'molokai'
 Plugin 'git@github.com:motus/pig.vim.git'
-Plugin 'superSnipMate'
 Plugin 'vim-coffee-script'
 
 call vundle#end()
