@@ -116,11 +116,7 @@ noremap <leader>v :YRShow<CR>
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
-"let g:molokai_original = 1
  
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-let g:SuperTabDefaultCompletionType = "context"
-
 "enhanced line transpose functions
 function! MoveLineUp()
   call MoveLineOrVisualUp(".", "")
