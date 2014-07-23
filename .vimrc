@@ -29,6 +29,7 @@ set t_Co=256            " use 265 colors in vim
 syntax on
 
 :colorscheme molokai
+set guifont=Inconsolata:h14
 
 set tags=./tags,tags
 set nocompatible
