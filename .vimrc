@@ -8,7 +8,6 @@ Plugin 'FuzzyFinder'
 Plugin 'L9'
 Plugin 'LustyJuggler'
 Plugin 'SuperTab'
-Plugin 'Tagbar'
 Plugin 'The-NERD-Commenter'
 Plugin 'The-NERD-tree'
 Plugin 'YankRing.vim'
@@ -107,7 +106,7 @@ noremap <leader>m <Esc>:FufBuffer<CR>
 noremap <leader>cd <Esc>:FufDir<CR>
 
 let g:tagbar_usearrows = 1
-nnoremap <leader>f :TagbarToggle<CR>
+nnoremap <leader>f :NERDTreeToggle<CR>
 
 let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
