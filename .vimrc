@@ -20,6 +20,8 @@ Plugin 'go.vim'
 Plugin 'molokai'
 Plugin 'git@github.com:motus/pig.vim.git'
 Plugin 'vim-coffee-script'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'VimClojure'
 
 call vundle#end()
 filetype plugin indent on
@@ -183,3 +185,6 @@ set guioptions-=l
 set guioptions-=r
 set guioptions-=L
 set guioptions-=R
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
