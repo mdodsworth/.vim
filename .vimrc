@@ -34,7 +34,7 @@ syntax on
 set guifont=Inconsolata\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols = 'fancy'
-let g:airline_theme = 'luna'
+let g:airline_theme = 'jellybeans'
 set fillchars+=stl:\ ,stlnc:\
 set termencoding=utf-8
 " Enable the list of buffers
