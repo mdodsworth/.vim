@@ -4,24 +4,25 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'FuzzyFinder'
 Plugin 'L9'
 Plugin 'LustyJuggler'
 Plugin 'SuperTab'
 Plugin 'The-NERD-Commenter'
 Plugin 'The-NERD-tree'
+Plugin 'VimClojure'
 Plugin 'YankRing.vim'
 Plugin 'ack.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 Plugin 'fugitive.vim'
 Plugin 'git@github.com:ekalinin/Dockerfile.vim.git'
 Plugin 'git@github.com:jnwhiteh/vim-golang.git'
+Plugin 'git@github.com:motus/pig.vim.git'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'go.vim'
 Plugin 'molokai'
-Plugin 'git@github.com:motus/pig.vim.git'
-Plugin 'vim-coffee-script'
 Plugin 'rainbow_parentheses.vim'
-Plugin 'VimClojure'
+Plugin 'vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,7 +31,16 @@ set t_Co=256            " use 265 colors in vim
 syntax on
 
 :colorscheme molokai
-set guifont=Inconsolata:h14
+set guifont=Inconsolata\ for\ Powerline:h14
+let g:airline_powerline_fonts = 1
+let g:Powerline_symbols = 'fancy'
+let g:airline_theme = 'luna'
+set fillchars+=stl:\ ,stlnc:\
+set termencoding=utf-8
+" Enable the list of buffers
+let g:airline#extensions#tabline#enabled = 1
+" Show just the filename
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 set tags=./tags,tags
 set nocompatible
@@ -103,17 +113,15 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>j <Esc>:FufFile **/<CR>
-noremap <leader>m <Esc>:FufBuffer<CR>
-noremap <leader>cd <Esc>:FufDir<CR>
+noremap <leader>j <Plug>GitGutterNextHunk
+noremap <leader>m <Plug>GitGutterPrevHunk
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :NERDTreeToggle<CR>
 
 let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
-noremap <leader>l :LustyJuggler<CR>
-
+noremap <leader>k :LustyJuggler<CR>
 noremap <leader>v :YRShow<CR>
 
 filetype plugin on
