@@ -114,14 +114,14 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 noremap <leader>j <Plug>GitGutterNextHunk
-noremap <leader>m <Plug>GitGutterPrevHunk
+noremap <leader>k <Plug>GitGutterPrevHunk
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :NERDTreeToggle<CR>
 
 let g:LustyJugglerDefaultMappings = 1
 let g:LustyJugglerSuppressRubyWarning = 1
-noremap <leader>k :LustyJuggler<CR>
+noremap <leader>m :LustyJuggler<CR>
 noremap <leader>v :YRShow<CR>
 
 filetype plugin on
