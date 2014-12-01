@@ -113,8 +113,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-noremap <leader>j <Plug>GitGutterNextHunk
-noremap <leader>k <Plug>GitGutterPrevHunk
+nmap <leader>j <Plug>GitGutterNextHunk
+nmap <leader>k <Plug>GitGutterPrevHunk
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :NERDTreeToggle<CR>
