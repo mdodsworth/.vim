@@ -1,11 +1,11 @@
-set nocompatible              
-filetype off                  
+set nocompatible
+filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'EasyMotion'
 Plugin 'L9'
+Plugin 'Lokaltog/vim-easymotion'
 Plugin 'LustyJuggler'
 Plugin 'SuperTab'
 Plugin 'The-NERD-Commenter'
@@ -51,7 +51,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
- 
+
 set pastetoggle=<F2>
 set encoding=utf-8
 set scrolloff=3
@@ -109,10 +109,6 @@ nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <leader>e <C-w>v<C-w>l
 nnoremap <leader>q :bd<CR>
 nnoremap <leader>r <C-w>o
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 nmap <leader>j <Plug>GitGutterNextHunk
 nmap <leader>k <Plug>GitGutterPrevHunk
@@ -127,7 +123,7 @@ noremap <leader>v :YRShow<CR>
 
 filetype plugin on
 set ofu=syntaxcomplete#Complete
- 
+
 "excludes for fuzzy finder
 let g:fuf_file_exclude = '\v\~$|\.(un\~|swp)$|node_modules/|\.git/'
 let g:fuf_mrufile_maxItem = 300
@@ -146,3 +142,18 @@ set guioptions-=R
 
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
+
+"mappings for EasyMotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Bi-directional find motion
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-s)
+
+" Turn on case sensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <C-j> <Plug>(easymotion-j)
+map <C-k> <Plug>(easymotion-k)
