@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'EasyMotion'
 Plugin 'L9'
 Plugin 'LustyJuggler'
 Plugin 'SuperTab'
