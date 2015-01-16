@@ -110,6 +110,10 @@ nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <leader>e <C-w>v<C-w>l
 nnoremap <leader>q :bd<CR>
 nnoremap <leader>r <C-w>o
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 nmap <leader>j <Plug>GitGutterNextHunk
 nmap <leader>k <Plug>GitGutterPrevHunk
@@ -156,5 +160,5 @@ nmap s <Plug>(easymotion-s)
 let g:EasyMotion_smartcase = 1
 
 " JK motions: Line motions
-map <C-j> <Plug>(easymotion-j)
-map <C-k> <Plug>(easymotion-k)
+"map <C-j> <Plug>(easymotion-j)
+"map <C-k> <Plug>(easymotion-k)
