@@ -30,6 +30,7 @@ call vundle#end()
 filetype plugin indent on
 
 set t_Co=256            " use 265 colors in vim
+set shell=/bin/bash
 syntax on
 
 :colorscheme molokai
