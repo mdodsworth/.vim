@@ -105,7 +105,6 @@ nnoremap k gk
 noremap <F1> <ESC>
 
 nnoremap ; :
-inoremap jj <ESC>
 
 nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <leader>e <C-w>v<C-w>l
