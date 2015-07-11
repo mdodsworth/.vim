@@ -1,4 +1,4 @@
-set nocompatible              
+set nocompatible
 filetype plugin indent on
 
 set t_Co=256            " use 265 colors in vim
@@ -12,7 +12,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
- 
+
 set pastetoggle=<F2>
 set encoding=utf-8
 set scrolloff=3
@@ -31,8 +31,6 @@ set relativenumber
 set number
 set undofile
 set cursorline
-"enable clipboard integration in macvim
-set clipboard=unnamed
 
 let mapleader = ","
 
@@ -53,7 +51,6 @@ nnoremap k gk
 noremap <F1> <ESC>
 
 nnoremap ; :
-inoremap jj <ESC>
 
 nnoremap <leader>w <C-w>s<C-w>j
 nnoremap <leader>e <C-w>v<C-w>l
