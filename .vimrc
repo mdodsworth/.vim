@@ -49,9 +49,9 @@ set tags=./tags,tags
 set nocompatible
 set modelines=0
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set pastetoggle=<F2>
