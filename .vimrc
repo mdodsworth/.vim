@@ -87,6 +87,7 @@ set showmatch
 set hlsearch
 nnoremap <silent><leader><space> :noh<CR>
 nnoremap <leader>a :Ack<space>
+nnoremap <Leader>fr :%s/\<<C-r><C-w>\>/
 nnoremap <tab> %
 vnoremap <tab> %
 
