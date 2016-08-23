@@ -14,16 +14,18 @@ Plugin 'VimClojure'
 Plugin 'YankRing.vim'
 Plugin 'ack.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'fugitive.vim'
 Plugin 'git@github.com:ekalinin/Dockerfile.vim.git'
 Plugin 'git@github.com:motus/pig.vim.git'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'haskell.vim'
 Plugin 'moll/vim-node'
 Plugin 'molokai'
 Plugin 'rainbow_parentheses.vim'
+Plugin 'tabular'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-coffee-script'
 
 call vundle#end()
@@ -86,10 +88,14 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <silent><leader><space> :noh<CR>
-nnoremap <leader>a :Ack<space>
 nnoremap <Leader>fr :%s/\<<C-r><C-w>\>/
 nnoremap <tab> %
 vnoremap <tab> %
+
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a: :Tabularize /:\zs<CR>
+vmap <Leader>a: :Tabularize /:\zs<CR>
 
 set wrap
 set textwidth=121
