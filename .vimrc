@@ -91,15 +91,10 @@ nnoremap <silent><leader><space> :noh<CR>
 nnoremap <Leader>fr :%s/\<<C-r><C-w>\>/
 nnoremap <tab> %
 vnoremap <tab> %
+nnoremap <leader>a :Ack<space>
 
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a- :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a: :Tabularize /:\zs<CR>
-vmap <Leader>a: :Tabularize /:\zs<CR>
-nmap <Leader>a; :Tabularize /::<CR>
-vmap <Leader>a; :Tabularize /::<CR>
+nnoremap <Leader>t :Tabularize<space>/
+vnoremap <Leader>t :Tabularize<space>/
 
 set wrap
 set textwidth=121
