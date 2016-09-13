@@ -47,6 +47,11 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
+" Use 'ag' rather than ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 set tags=./tags,tags
 set nocompatible
 set modelines=0
