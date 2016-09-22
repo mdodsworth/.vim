@@ -114,6 +114,7 @@ nnoremap j gj
 nnoremap k gk
 
 noremap <F1> <ESC>
+inoremap jj <ESC>
 
 nnoremap ; :
 
