@@ -6,7 +6,6 @@ call vundle#begin()
 
 Plugin 'L9'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'LustyJuggler'
 Plugin 'SuperTab'
 Plugin 'The-NERD-Commenter'
 Plugin 'The-NERD-tree'
@@ -132,10 +131,6 @@ nmap <leader>k <Plug>GitGutterPrevHunk
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>f :NERDTreeToggle<CR>
-
-let g:LustyJugglerDefaultMappings = 1
-let g:LustyJugglerSuppressRubyWarning = 1
-noremap <leader>m :LustyJuggler<CR>
 noremap <leader>v :YRShow<CR>
 
 filetype plugin on
